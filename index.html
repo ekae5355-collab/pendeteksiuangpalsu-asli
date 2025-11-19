@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pendeteksi Uang Palsu / Asli</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0/dist/tf.min.js"></script>
+</head>
+<body>
+  <div class="card">
+    <h1>Pendeteksi Uang Palsu / Asli — TensorFlow.js</h1>
+
+    <div class="controls">
+      <input type="file" id="fileInput" accept="image/*" />
+      <button id="btnWebcam">Nyalakan Webcam</button>
+      <button id="btnLoadModel">Muat Model</button>
+      <button id="btnPredict" disabled>Prediksi</button>
+      <button id="btnClear">Bersihkan</button>
+    </div>
+
+    <img id="preview" style="display:none" />
+    <video id="video" playsinline autoplay muted style="display:none"></video>
+    <canvas id="canvas" width="224" height="224" style="display:none"></canvas>
+
+    <div id="result"></div>
+    <div id="modelStatus">Model: <span id="modelName">Belum dimuat</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
