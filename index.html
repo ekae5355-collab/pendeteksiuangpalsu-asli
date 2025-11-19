@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pendeteksi Uang Palsu / Asli</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0/dist/tf.min.js"></script>
 </head>
 <body>
   <div class="card">
-    <h1>Pendeteksi Uang Palsu / Asli</h1>
+    <h1>💵 Pendeteksi Uang Palsu / Asli</h1>
 
     <div class="controls">
       <input type="file" id="fileInput" accept="image/*" />
-      <button id="btnWebcam">Nyalakan Webcam</button>
-      <button id="btnLoadModel">Muat Model</button>
-      <button id="btnPredict" disabled>Prediksi</button>
-      <button id="btnClear">Bersihkan</button>
+      <button id="btnWebcam">🎥 Webcam</button>
+      <button id="btnLoadModel">📦 Muat Model</button>
+      <button id="btnPredict" disabled>🔍 Prediksi</button>
+      <button id="btnClear">🧹 Bersihkan</button>
     </div>
 
     <img id="preview" style="display:none" />
@@ -24,10 +25,9 @@
     <canvas id="canvas" width="224" height="224" style="display:none"></canvas>
 
     <div id="result"></div>
-    <div id="modelStatus">Model: <span id="modelName">Belum dimuat</span></div>
+    <div id="modelStatus">Status Model: <span id="modelName">Belum dimuat</span></div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
