@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.controls button,
+.controls input {
+  margin: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.controls input {
+  background: #ddd;
+  color: black;
+}
+
+#preview, video {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
